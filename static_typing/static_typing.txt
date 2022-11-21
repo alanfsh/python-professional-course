@@ -1,0 +1,25 @@
+# Python es de tipado dinamico y fuerte
+
+# Tipado estatico --> no permite reasignar datos en una variable definida
+#                     int a = 2
+#                     a = "s" --> produce un ERROR, porque a esta definida como ENTERO, los errores aparecen en TIEMPO DE COMPILACION
+
+# Tipado dinamico --> permite reasignar variables sin restricciones, los errores aparecen en TIEMPO DE EJECUCION
+#                     a = 3
+#                     a = "cadena" --> NO genera ERRORES, reasigna sin problemas
+
+# Tipado fuerte (Strong) --> trata los datos minuciosamente:
+#               x = 5
+#               y = "7"
+#               z = x + y --> genera un ERROR, porque no se pueden sumar diferentes tipos de datos
+
+# Tipado debil (Weak) --> trata los datos menos estrictamente:
+#               x = 5
+#               y = "5"
+#               z = x + y --> z = 10 --> NO genera ERRORES, porque primero convierte el tipo de dato de uno de estos (cast data)
+
+
+# TIPADO ESTATICO EN PYTHON
+# Se puede realizar tipado estatico en Python con el modulos Typing, definienfo el tipo de dato de cada variable o elemento
+# El tipado estatico sirve para detectar errores en el programa antes de ser ejecutado, en Python se pueden detectar errores
+# de tipado utilizando la libreria mypy.
